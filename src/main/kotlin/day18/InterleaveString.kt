@@ -1,4 +1,4 @@
-package day17
+package day18
 
 /**
  *
@@ -38,27 +38,55 @@ class Solution {
 
         }
 
-        for (x in 0..s2.length){
+        dp[0][0] = true
+        for (x in 1..s2.length) {
 
+            if (s2[x - 1] == s3[x - 1]) {
+
+                dp[0][x] = dp[0][x - 1]
+
+            } else {
+
+                break
+
+            }
 
         }
 
         for (y in 1..s1.length) {
 
+            if (s1[y - 1] == s3[y - 1]) {
+
+                dp[y][0] = dp[y - 1][0]
+
+            } else {
+
+                break
+
+            }
+
+        }
+
+
+        for (y in 1..s1.length) {
+
             for (x in 1..s2.length) {
 
-                /*if (s1[y] == s3[]) {
+                if (s1[y - 1] == s3[x + y - 1]) {
 
                     dp[y][x] = dp[y - 1][x]
 
-                } else if (s2[x] == s3[]) {
+                }
 
+                if (!dp[y][x]) {
 
-                } else {
+                    if (s2[x - 1] == s3[x + y - 1]) {
 
-                    return false
+                        dp[y][x] = dp[y][x - 1]
 
-                }*/
+                    }
+
+                }
 
             }
 
@@ -67,6 +95,14 @@ class Solution {
         return dp[s1.length][s2.length]
 
     }
+
+
+}
+
+
+fun main() {
+
+    Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac")
 
 
 }
