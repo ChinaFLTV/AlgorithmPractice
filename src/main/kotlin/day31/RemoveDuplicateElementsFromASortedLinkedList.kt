@@ -18,6 +18,15 @@ import day24.ListNode
 class Solution {
 
 
+    /**
+     *
+     * @author <a href="https://leetcode.cn/u/dzh-2/">dzh</a>
+     * @date 2024/4/21 PM 11:40:22
+     * @version 1.0.0
+     * @description 双指针
+     * @filename RemoveDuplicateElementsFromASortedLinkedList.kt
+     *
+     */
     fun deleteDuplicates(head: ListNode?): ListNode? {
 
         if (head?.next == null) {
