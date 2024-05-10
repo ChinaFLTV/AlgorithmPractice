@@ -49,7 +49,7 @@ class Solution {
 }
 
 
-class TreeNode(val `val`: Int) {
+class TreeNode(var `val`: Int) {
 
 
     var left: TreeNode? = null
