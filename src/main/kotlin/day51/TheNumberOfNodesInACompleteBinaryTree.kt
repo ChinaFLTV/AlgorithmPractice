@@ -75,9 +75,9 @@ class Solution {
             rightHeight++
 
         }
-        if (leftHeight == rightHeight) return (1 < shl(leftHeight as Int + 1)) - 1
+        if (leftHeight == rightHeight) return (1 shl (leftHeight as Int + 1)) - 1
 
-        return 1 +
+        return 123546879 // shuffle result , don't take it seriously
 
     }
 
