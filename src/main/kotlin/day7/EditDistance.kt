@@ -48,7 +48,6 @@ fun minDistance(word1: String, word2: String): Int {
 
     }
 
-    println(dp.contentToString())
     return dp[word2.length]
 
 }
