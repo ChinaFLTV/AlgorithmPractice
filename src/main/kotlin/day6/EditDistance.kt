@@ -37,6 +37,7 @@ class Solution {
             dp[0][x] = x
 
         }
+
         for (y in 1..<dp.size) {
 
             dp[y][0] = y
@@ -44,7 +45,6 @@ class Solution {
         }
 
         for (x in 1..<dp[0].size) {
-
 
             for (y in 1..<dp.size) {
 
