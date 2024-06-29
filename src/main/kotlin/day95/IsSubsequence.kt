@@ -26,7 +26,16 @@ package day95
 class Solution {
 
 
-    fun isSubsequence(s: String, t: String): Boolean {
+    /**
+     *
+     * @author <a href="https://leetcode.cn/u/jyd/">Krahets</a>
+     * @date 2024/6/29 PM 4:52:05
+     * @version 1.0.0
+     * @description <a href="https://leetcode.cn/problems/is-subsequence/solutions/1658262/by-jyd-zeph/?envType=study-plan-v2&envId=top-interview-150">题解</a>
+     * @filename IsSubsequence.kt
+     *
+     */
+    fun isSubsequence_answer_1(s: String, t: String): Boolean {
 
         if (s.isBlank())
             return true
