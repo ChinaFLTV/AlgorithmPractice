@@ -25,7 +25,7 @@ class Solution {
      * @filename PowXN.kt
      *
      */
-    fun myPow(x: Double, n: Int): Double {
+    fun myPow_answer_1(x: Double, n: Int): Double {
 
         if (x == 0.0)
             return 0.0
