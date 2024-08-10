@@ -66,7 +66,7 @@ public class DayingScienceAndTechnology_2 {
 
     public static void main(String[] args) {
 
-        System.out.println("Start running...");
+        System.out.println("开始测试...");
         for (int i = 0; i < N; i++) {
 
             // new Worker(i).start();
@@ -81,7 +81,7 @@ public class DayingScienceAndTechnology_2 {
     static class Worker extends Thread {
 
 
-        private Integer id;
+        private final Integer id;
 
 
         public Worker(Integer id) {
@@ -165,7 +165,6 @@ public class DayingScienceAndTechnology_2 {
 
 
                         }
-
 
                     }
 
