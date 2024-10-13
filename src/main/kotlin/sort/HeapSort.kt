@@ -31,7 +31,7 @@ fun shiftDown(nums: IntArray, len: Int, posIndex: Int) {
 
 fun heapify(nums: IntArray, len: Int) {
 
-    for (i in (nums.size / 2 - 1) downTo 0) {
+    for (i in (len / 2 - 1) downTo 0) {
 
         shiftDown(nums, len, i)
 
