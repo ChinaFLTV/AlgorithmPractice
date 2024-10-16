@@ -82,7 +82,8 @@ class MyQueue {
 
         val res = peek()
 
-        stack2.pop()
+        if (res != -1)
+            stack2.pop()
 
         return res
 
